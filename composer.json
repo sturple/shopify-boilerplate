@@ -1,0 +1,22 @@
+{
+    "name": "sturple/shopify-boilerplate",
+    "description": "Shopify Boilerplate (Embed)",
+    "type": "symfony-bundle",
+    "keywords": ["shopify", "oauth","embed", "symfony"],
+    "homepage": "https://github.com/sturple/shopify-boilerplate",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shawn Turple",
+            "email": "shawn@turple.ca"
+        }
+    ],
+    "require": {
+        "sturple/common" : "~0.0"
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Fgms/BoilerPlateBundle",
+    "autoload" : {
+        "psr-0" : {"Fgms\\BoilerPlateBundle" : ""}
+    }
+}

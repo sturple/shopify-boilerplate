@@ -1,0 +1,6 @@
+services:
+    fgms_boiler_plate.to_https:
+        class: Fgms\BoilerPlateBundle\EventListener\ToHttpsListener
+        arguments: ["@router"]
+        tags:
+            -   { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
