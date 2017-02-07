@@ -1,15 +1,15 @@
 
-fgms_boiler_plate_install:
+fgms_boilerplate_install:
     path: /install
     defaults:
         _controller: FgmsBoilerPlateBundle:Install:install
 
-fgms_boiler_plate_auth:
+fgms_boilerplate_auth:
     path: /auth
     defaults:
         _controller: FgmsBoilerPlateBundle:Install:auth
 
-fgms_boiler_plate_homepage:
+fgms_boilerplate_homepage:
     path: /
     defaults:
         _controller: FgmsBoilerPlateBundle:Default:home

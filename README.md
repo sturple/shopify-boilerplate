@@ -60,57 +60,10 @@ To setup a Shopify proxy for form submission point the proxy at `/submit`.  The 
 
 ## Update boilerplate to your class
 
-```
 
+* grep -rln 'BoilerPlateBundle' * | xargs -i@ sed -i 's/BoilerPlateBundle/MYCLASSBundle/g' @
+* grep -rln 'fgms_boilerplate' * | xargs -i@ sed -i 's/fgms_boilerplate/fgms_ALIAS/g' @
+* grep -rln 'shopify_boilerplate_store' * | xargs -i@ sed -i 's/shopify_boilerplate_store/shopify_PREFIX_store/g' @
+* mv FgmsBoilerPlateBundle.php FgmsMYCLASSBundle.php
+* mv DependencyInjection/FgmsBoilerPlateExtension.php DependencyInjection/FgmsMYCLASSBundle.php
 
-```
-grep -rln 'BoilerPlateBundle' * | xargs -i@ sed -i 's/BoilerPlateBundle/MYCLASSBundle/g' @
-grep -rln 'fgms_boilerplate' * | xargs -i@ sed -i 's/fgms_boilerplate/fgms_ALIAS/g' @
-grep -rln 'shopify_boilerplate_store' * | xargs -i@ sed -i 's/shopify_boilerplate_store/shopify_PREFIX_store/g' @
-mv FgmsBoilerPlateBundle.php FgmsMYCLASSBundle.php
-mv DependencyInjection/FgmsBoilerPlateExtension.php DependencyInjection/FgmsMYCLASSBundle.php
-
-```
-.
-├── Command
-│   └── BaseCommand.php
-├── composer.json
-├── Configuration
-│   ├── ConfigurationInterface.php
-│   ├── Configuration.php
-│   ├── Exception
-│   │   ├── Exception.php
-│   │   ├── InvalidExecuteException.php
-│   │   └── NotLoadedException.php
-│   ├── MockValueWrapperConfiguration.php
-│   ├── ValueWrapperConfiguration.php
-│   └── YamlConfiguration.php
-├── Controller
-│   ├── BaseController.php
-│   ├── DefaultController.php
-│   └── InstallController.php
-├── DependencyInjection
-│   ├── Configuration.php
-│   └── FgmsBoilerPlateExtension.php
-├── Entity
-│   └── Store.php
-├── EventListener
-│   └── ToHttpsListener.php
-├── FgmsBoilerPlateBundle.php
-├── README.md
-├── Repository
-│   └── StoreRepository.php
-├── Resources
-│   ├── config
-│   │   ├── routing.yml
-│   │   └── services.yml
-│   └── views
-│       └── Default
-│           ├── base.html.twig
-│           └── index.html.twig
-└── Tests
-    └── Configuration
-        ├── ValueWrapperConfigurationTest.php
-        └── YamlConfigurationTest.php
-
-```

@@ -1,5 +1,5 @@
 services:
-    fgms_boiler_plate.to_https:
+    fgms_boilerplate.to_https:
         class: Fgms\BoilerPlateBundle\EventListener\ToHttpsListener
         arguments: ["@router"]
         tags:
