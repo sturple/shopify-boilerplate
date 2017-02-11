@@ -55,7 +55,7 @@ The bundle specifies the following routes which must be known to configure as a 
 - **OAuth:** `/auth`
 - **Home:** `/`
 
-To setup a Shopify proxy for form submission point the proxy at `/submit`.  The unique code for the form to submit to should be appended to the Shopify proxy link.
+
 
 
 ## Update boilerplate to your class
@@ -65,5 +65,5 @@ To setup a Shopify proxy for form submission point the proxy at `/submit`.  The 
 * grep -rln 'fgms_boilerplate' * | xargs -i@ sed -i 's/fgms_boilerplate/fgms_ALIAS/g' @
 * grep -rln 'shopify_boilerplate_store' * | xargs -i@ sed -i 's/shopify_boilerplate_store/shopify_PREFIX_store/g' @
 * mv FgmsBoilerPlateBundle.php FgmsMYCLASSBundle.php
-* mv DependencyInjection/FgmsBoilerPlateExtension.php DependencyInjection/FgmsMYCLASSBundle.php
+* mv DependencyInjection/FgmsBoilerPlateExtension.php DependencyInjection/FgmsMYCLASSExtension.php
 

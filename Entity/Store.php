@@ -33,10 +33,6 @@ class Store
     private $status = 'active';
 
     /**
-     * @ORM\OneToMany(targetEntity="Form",mappedBy="store")
-     */
-    private $forms;
-    /**
      * Constructor
      */
     public function __construct()
