@@ -14,3 +14,7 @@ fgms_boilerplate_homepage:
     defaults:
         _controller: FgmsBoilerPlateBundle:Default:home
 
+fgms_boilerplate_support:
+    path: /support
+    defaults:
+        _controller: FgmsBoilerPlateBundle:Default:support

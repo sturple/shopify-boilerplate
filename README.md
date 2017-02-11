@@ -45,6 +45,7 @@ The following configuration options may/must be set in `config.yml`:
 fgms_boilerplate:
     api_key:            # API key for Shopify
     secret:             # Secret for Shopify
+    scope:              # Scope for Shopify permissions.
 ```
 
 ## Shopify App Configuration
@@ -54,7 +55,7 @@ The bundle specifies the following routes which must be known to configure as a 
 - **Install:** `/install`
 - **OAuth:** `/auth`
 - **Home:** `/`
-
+- **Support:** `/support
 
 
 
