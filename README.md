@@ -62,7 +62,7 @@ The bundle specifies the following routes which must be known to configure as a 
 ## Update boilerplate to your class
 
 
-* grep -rln 'BoilerPlateBundle' * | xargs -i@ sed -i 's/BoilerPlateBundle/MYCLASSBundle/g' @
+* grep -rln 'BoilerPlate' * | xargs -i@ sed -i 's/BoilerPlate/MYCLASS/g' @
 * grep -rln 'fgms_boilerplate' * | xargs -i@ sed -i 's/fgms_boilerplate/fgms_ALIAS/g' @
 * grep -rln 'shopify_boilerplate_store' * | xargs -i@ sed -i 's/shopify_boilerplate_store/shopify_PREFIX_store/g' @
 * mv FgmsBoilerPlateBundle.php FgmsMYCLASSBundle.php
